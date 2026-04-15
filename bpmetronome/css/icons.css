@@ -30,3 +30,27 @@
 .icon-settings:hover {
     transform: rotate(90deg);
 }
+
+.icon-x {
+    -webkit-mask-image: url('../assets/icons/x.svg');
+    mask-image: url('../assets/icons/x.svg');
+    
+}
+
+.icon-minimize {
+    -webkit-mask-image: url('../assets/icons/dash.svg');
+    mask-image: url('../assets/icons/dash.svg');
+}
+
+.icon-play {
+    -webkit-mask-image: url('../assets/icons/play.svg');
+    mask-image: url('../assets/icons/play.svg');
+}
+
+.icon-arrow-down {
+    -webkit-mask-image: url('../assets/icons/chevron-down.svg');
+    mask-image: url('../assets/icons/chevron-down.svg');
+
+    height: 20px;
+    width: 20px;
+}

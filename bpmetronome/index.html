@@ -6,40 +6,80 @@
     <title>BP Metronome</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/fonts.css">
 
 </head>
 <body>
     <div class="navbar">
         <div class="row">
             <div class="setting-btn">
-                <div class="icon icon-settings"></div>
+                <div id="settings-btn" class="icon icon-settings"></div>
             </div>
-            <p class="logo">BP Metronome</p>
-            <div class="time-sig">
+            <div id="time-sig-dropdown" class="time-sig">
                 <p class="time-sig-text">4/4</p>
             </div>
         </div>
-    </div>
-    <div class="metronome-container">
         <div class="row">
-            <p class="tempo">100</p>
+            <p class="logo">BPMetronome</p>
         </div>
-        <div class="row">
-            <p class="bpm">BPM</p>
-        </div>
-        <div class="row circle-row">
-            <!-- here the number of circles will be dynamic, based off of time signature -->
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-        <div class="row">
-            <div class="tap-btn">
-                <p>TAP</p>
+        <div class="row win-btns">
+            <div class="minimize-btn">
+                <div class="icon icon-minimize"></div>
+            </div>
+            <div class="close-btn">
+                <div class="icon icon-x"></div>
             </div>
         </div>
     </div>
+    <div class="main">
+        <div class="metronome-container">
+            <div class="row">
+                <div class="col">
+                    <p class="bpm">BPM</p>
+                    <p class="tempo">100</p>
+                </div>
+            </div>
+        
+            <div class="row circle-row">
+                <!-- here the number of circles will be dynamic, based off of time signature -->
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="row btn-row">
+                <div class="play-btn">
+                    <div class="icon icon-play"></div>
+                </div>
+                <div class="tap-btn">
+                    <p>TAP</p>
+                </div>
+            </div>
+
+            <div class="bpm-scrollbar">
+                <div class="bar">
+                    <div class="thumb"></div>
+                </div>
+                
+                <div class="row">
+                    <p class="min-tempo">20</p>
+                    <p class="max-tempo">300</p>
+                </div>
+            </div>
+        </div>
+        <div class="sound-stuff">
+            <p class="title">Sound</p>
+
+            <div class="row">
+                <div class="sound-btn active">Click</div>
+                <div class="sound-btn">Beep</div>
+                <div class="sound-btn">Wood</div>
+                <div class="sound-btn">Custom</div>
+            </div>
+        </div>
+    </div>
+
+    
     
 </body>
 </html>
