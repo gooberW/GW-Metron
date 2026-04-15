@@ -18,9 +18,12 @@
             <div id="time-sig-dropdown" class="time-sig">
                 <p class="time-sig-text">4/4</p>
             </div>
+            <div id="accent-toggle" class="accent-toggle off">
+                <p id="accent-toggle-text">Accent Off</p>
+            </div>
         </div>
         <div class="row">
-            <p class="logo">BPMetronome</p>
+            <p class="logo">Metron</p>
         </div>
         <div class="row win-btns">
             <div class="minimize-btn">
@@ -36,11 +39,11 @@
             <div class="row">
                 <div class="col">
                     <p class="bpm">BPM</p>
-                    <p class="tempo">100</p>
+                    <p id="tempo" class="tempo">120</p>
                 </div>
             </div>
         
-            <div class="row circle-row">
+            <div id="time-dots-container" class="row circle-row">
                 <!-- here the number of circles will be dynamic, based off of time signature -->
                 <div class="circle"></div>
                 <div class="circle"></div>
@@ -57,13 +60,12 @@
             </div>
 
             <div class="bpm-scrollbar">
-                <div class="bar">
-                    <div class="thumb"></div>
-                </div>
+                <input type="range" min="20" max="300" value="120" 
+                                    class="bpm-slider" id="bpm-range">
                 
                 <div class="row">
-                    <p class="min-tempo">20</p>
-                    <p class="max-tempo">300</p>
+                    <span class="min-tempo">20</span>
+                    <span class="max-tempo">300</span>
                 </div>
             </div>
         </div>
@@ -82,4 +84,6 @@
     
     
 </body>
+
+<script src="renderer.js"></script>
 </html>

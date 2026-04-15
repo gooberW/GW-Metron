@@ -1,2 +1,5 @@
 /bpmetronome/node_modules/electron/dist
 /bpmetronome/dist
+/metron/node_modules/electron/dist
+/metron/dist/win-unpacked
+/metron/dist
