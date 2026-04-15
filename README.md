@@ -1,4 +1,6 @@
 # BPMetronome
+> Built using Electron with JavaScript.
+
 Simple metronome desktop app to pass the time.
 
 ## UI Concept
