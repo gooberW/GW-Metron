@@ -3,6 +3,7 @@ addEventListener("DOMContentLoaded", (event) => {
     const tempoDisplay = document.getElementById("tempo");
     // this is the bar
     const bpmSlider = document.getElementById("bpm-range");
+    
 
     const accentToggle = document.getElementById("accent-toggle");
     const accentToggleText = document.getElementById("accent-toggle-text");
@@ -24,6 +25,8 @@ addEventListener("DOMContentLoaded", (event) => {
         
         // the we save this and use it for the metronome
     };
+
+    updateTempo(bpmSlider.value); // set the initial value
 
     bpmSlider.addEventListener("input", (e) => {
         updateTempo(e.target.value);
